@@ -1,0 +1,63 @@
+{
+  "name": "sequelize_example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+	"start": "node ./src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-config-prettier": "^6.9.0",
+    "eslint-plugin-import": "^2.20.0",
+    "eslint-plugin-node": "^11.0.0",
+    "eslint-plugin-prettier": "^3.1.2",
+    "prettier": "^1.19.1"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "parserOptions": {
+      "ecmaVersion": 2020
+    },
+    "extends": [
+      "eslint:recommended",
+      "airbnb-base",
+      "plugin:node/recommended",
+      "plugin:prettier/recommended"
+    ],
+    "rules": {
+      "no-plusplus": "off",
+      "no-bitwise": "off",
+      "no-console": "off",
+      "prettier/prettier": "error",
+      "node/exports-style": "error",
+      "node/prefer-global/console": "error",
+      "node/prefer-global/process": "error",
+      "node/prefer-global/url": "error",
+      "node/prefer-promises/fs": "error"
+    }
+  },
+  "prettier": {
+    "printWidth": 100,
+    "tabWidth": 2,
+    "useTabs": false,
+    "semi": true,
+    "singleQuote": true,
+    "trailingComma": "all",
+    "bracketSpacing": true,
+    "arrowParens": "avoid",
+    "endOfLine": "lf"
+  },
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "pg": "^7.18.1",
+    "sequelize": "^5.21.4"
+  }
+}
